@@ -110,7 +110,7 @@ function App() {
             setCartOpened(true);
           }}
         />
-        <Route path="/" exact>
+        <Route path="" exact>
           <Home
             items={items}
             cartItems={cartItems}
@@ -122,10 +122,10 @@ function App() {
             isLoading={isLoading}
           />
         </Route>
-        <Route path="/favorites" exact>
+        <Route path="favorites" exact>
           <Favorites onAddToFavorite={onAddToFavorite} />
         </Route>
-        <Route path="/orders" exact>
+        <Route path="orders" exact>
           <Orders />
         </Route>
       </div>
